@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#E3F2FD"
+    android:orientation="vertical"
 
     tools:context="com.example.android.jastjava.MainActivity"
     tools:targetApi="11">
@@ -36,10 +36,10 @@
             android:id="@+id/dec"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:onClick="increment"
             android:background="#3949AB"
-            android:textColor="#FFFFFF"
+            android:onClick="increment"
             android:text="-"
+            android:textColor="#FFFFFF"
             android:textSize="20sp" />
 
         <TextView
@@ -55,10 +55,10 @@
             android:id="@+id/inc"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:onClick="decrement"
             android:background="#3949AB"
-            android:textColor="#FFFFFF"
+            android:onClick="decrement"
             android:text="+"
+            android:textColor="#FFFFFF"
             android:textSize="20sp" />
 
     </LinearLayout>
@@ -86,24 +86,23 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="16dp"
-        android:onClick="submitOrder"
         android:background="#3949AB"
+        android:onClick="submitOrder"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
-        android:textColor="#FFFFFF"
         android:text="Заказать!"
+        android:textColor="#FFFFFF"
         android:textSize="15sp" />
 
     <TextView
         android:id="@+id/zakaz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Спасибо! Ваш заказ принят! Ожидайте"
         android:layout_gravity="center_horizontal"
-        android:gravity="center_horizontal"
         android:layout_marginTop="16dp"
-        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:text="Спасибо! Ваш заказ принят! Ожидайте"
         android:textColor="#D50000"
-        android:visibility="invisible"
-        />
+        android:textSize="20dp"
+        android:visibility="invisible" />
 </LinearLayout>
