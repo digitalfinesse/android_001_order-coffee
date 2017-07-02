@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E3F2FD"
+
+    tools:context="com.example.android.jastjava.MainActivity"
+    tools:targetApi="11">
+
+    <Button
+        android:id="@+id/kofe"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/kofe_28" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Количество"
+        android:textAllCaps="true"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dec"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:onClick="increment"
+            android:background="#3949AB"
+            android:textColor="#FFFFFF"
+            android:text="-"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/quantity_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/inc"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:onClick="decrement"
+            android:background="#3949AB"
+            android:textColor="#FFFFFF"
+            android:text="+"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Цена"
+        android:textAllCaps="true"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/price_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:onClick="submitOrder"
+        android:background="#3949AB"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textColor="#FFFFFF"
+        android:text="Заказать!"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/zakaz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Спасибо! Ваш заказ принят! Ожидайте"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:textSize="20dp"
+        android:textColor="#D50000"
+        android:visibility="invisible"
+        />
+</LinearLayout>
